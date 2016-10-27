@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button con_button;
     private Button clear_button;
 
-    DecimalFormat round = new DecimalFormat("0.0");
+   // DecimalFormat round = new DecimalFormat("0.0");
     //private static final String TAG = "Converted value";
 
     @Override
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
                     float c = (f-32f)*(5f/9f);
 
-                    String celcius = round.format(c);
+                    String celcius = Float.toString(c);
 
                     cel.setText(celcius+"C", TextView.BufferType.EDITABLE);
 
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
                     float f = (c*(9f/5f))+32f;
 
-                    String fahrenheit = round.format(f);
+                    String fahrenheit = Float.toString(f);
 
                     farh.setText(fahrenheit+"F",TextView.BufferType.EDITABLE);
 

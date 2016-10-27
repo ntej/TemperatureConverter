@@ -17,7 +17,8 @@
         android:hint="@string/farh_hint"
         android:layout_alignTop="@+id/cel_editText"
         android:layout_toLeftOf="@+id/buttonid"
-        android:layout_toStartOf="@+id/buttonid" />
+        android:layout_toStartOf="@+id/buttonid"
+        android:inputType="numberDecimal"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -27,7 +28,8 @@
         android:hint="@string/cel_hint"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/buttonid"
-        android:layout_toEndOf="@+id/buttonid" />
+        android:layout_toEndOf="@+id/buttonid"
+        android:inputType="numberDecimal"/>
 
     <Button
         android:layout_width="wrap_content"
